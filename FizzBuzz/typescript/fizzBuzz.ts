@@ -1,4 +1,4 @@
-function fizzBuzz(n: number): string[] {
+export function fizzBuzz(n: number): string[] {
 	let answer : string[] = []	
 	for (let i = 1; i <= n; i++) {
 		let mystr = ''
@@ -11,7 +11,7 @@ function fizzBuzz(n: number): string[] {
 		if (i % 5 === 0) {
 			mystr += "Buzz"
 		}
+	  answer.push(mystr)
 	}
-	answer.push(mystr)
 	return answer
 }
